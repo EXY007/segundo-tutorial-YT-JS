@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <p><textarea id="comentarios" rows="20" cols="40"></textarea></p>
+        <input type="button" value="Enviar" onclick="comentar()">
+    </form>
+
+
+
+    <script>
+
+        <!--! estas 2 lineas hacen que el texbox no se pueda expandir-->
+       let area = document.getElementById("comentarios");
+       area.style.resize = "none";
+       
+
+        function comentar(){
+
+            if(document.getElementById("comentarios").value.length > 10)
+            {
+                swal("COMETARIO ES MUY LARGO")
+
+            }
+
+
+            else
+            {
+                swal("COMETARIO CORRECTO")
+
+            }
+
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+    
+</body>
+</html>

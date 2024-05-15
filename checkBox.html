@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <h4>que lenguajes conoces</h4>
+
+    <form action="">
+        <input type="checkbox" id="chek1">java <br>
+        <input type="checkbox" id="chek2">c++ <br>
+        <input type="checkbox" id="chek3">c# <br>
+        <input type="checkbox" id="chek4">pyton <br>
+        <input type="checkbox" id="chek5">JavaScript <br>
+        <input type="button" value="confirmar" onclick="seleccion()">
+    </form>
+
+    
+    <script>
+        function seleccion(){
+            let cant = 0
+            if(document.getElementById("chek1").checked)<!--! el .cheked me detecta si esta activada o no -->
+            {
+                cant++
+            }
+
+            if(document.getElementById("chek2").checked)
+            {
+                cant++
+            }
+
+            if(document.getElementById("chek3").checked)
+            {
+                cant++
+            }
+
+            if(document.getElementById("chek4").checked)
+            {
+                cant++
+            }
+            if(document.getElementById("chek5").checked)
+            {
+                cant++
+            }
+
+            if(cant==1)
+            {
+                swal("conoces "+ cant+ " lenguaje")
+            }
+
+            if(cant>1)
+            {
+                swal("conoces "+ cant+ " lenguajes")
+            }
+
+            
+        }
+
+        
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>

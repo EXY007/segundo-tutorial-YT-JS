@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <h4>seleccione disponivilidad de horario</h4>
+    <form action="">
+        <input type="radio" id="radio1" name="Horario">Mañana<br>
+        <input type="radio" id="radio2" name="Horario">tarde<br>
+        <input type="radio" id="radio3" name="Horario">noche<br>
+        <input type="radio" id="radio4" name="Horario">madrugada<br><br><br>
+        <input type="button" value="confirmar" onclick="seleccion()">
+    </form>
+
+    <script>
+        function seleccion(){
+
+          if(document.getElementById("radio1").checked)<!--! el .cheked me detecta si esta activada o no -->  
+          {
+            swal("Horario de 8am a 12m")
+
+          }
+
+
+          if(document.getElementById("radio2").checked) 
+          {
+            swal("Horario de 12m a 6pm")
+
+          }
+
+
+          if(document.getElementById("radio3").checked) 
+          {
+            swal("Horario de 6pm a 12am")
+
+          }
+          
+
+          if(document.getElementById("radio4").checked) 
+          {
+            swal("Horario de 12am a 8am")
+
+          }
+          
+          
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>
