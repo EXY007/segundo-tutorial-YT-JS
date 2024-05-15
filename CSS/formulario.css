@@ -1,0 +1,18 @@
+body {
+    background-color: aqua;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Altura mínima del viewport */
+   /* margin: 0; /* Elimina el margen por defecto */
+  }
+
+#caja{
+    background-color:rgb(50, 160, 160);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 600px;
+    flex-direction: column;
+}
