@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>FUNCIONES OPEN Y CONFIRMAR</h5>
+
+
+    <form action="">
+        abrir en otra pestaña
+        <input type="button" value="abrir" onclick="abrir()">
+        <br>
+        <br>
+         abrir en otra ventana
+         <input type="button" value="abrir" onclick="ventana()">
+         <br><br>
+         <input type="button" value="salir" onclick="confirmar()">
+
+
+         <script>
+            function abrir(){
+                let pestaña = open();
+                pestaña.document.write("SOY OTRA PAGINA WEB")
+
+            }
+
+            function ventana(){
+                let ventana = open("","","width=400px, height=250px");
+                ventana.document.write("soy otra ventana WEB");
+
+            }
+
+            function confirmar(){
+                let respuesta = confirm("desea salir de la pagina?")
+
+                if(respuesta == true){
+                    window.close();
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+         </script>
+
+
+
+
+
+
+    </form>
+
+
+
+    
+</body>
+</html>
