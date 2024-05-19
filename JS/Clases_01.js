@@ -1,7 +1,7 @@
 class Persona{                               //clase
     nombre = "Homero"           
     apellido = "simpson"
-    direccion = "Zamorano"                  //aributos
+    direccion = "Zamorano"                  //aributos/propiedades
     telefono = 5553472
     Email = "Luis@gmail.com"
 
