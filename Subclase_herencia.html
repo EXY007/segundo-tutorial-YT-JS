@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBCLASES 01</title>
+</head>
+<body>
+
+    <script>
+
+        class Deportista  {
+
+            constructor (nombre,apellido){
+                this.nombre =  nombre;
+                this.apellido = apellido;
+            }
+        }
+
+
+        class Futbolista extends Deportista{
+            constructor(nombre,apellido,goles)
+            {
+                super(nombre,apellido)
+                this.goles = goles;
+
+
+            }
+
+
+        }
+
+        let deportista1 = new Deportista("Luis","Medina")
+        let futbolista1 = new Futbolista("Fernando","Aguilera", 53)
+
+
+
+
+
+        let miObjeto = {
+            nombre: "sandra",
+            edad: 24
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
