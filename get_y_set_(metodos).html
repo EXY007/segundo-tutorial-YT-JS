@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get y Set</title>
+</head>
+<body>
+
+    <script>
+
+        class Deportista  {
+
+            constructor (nombre,apellido){
+                this.nombre7 =  nombre;
+                this.apellido7 = apellido;
+                
+            }
+
+            suma(num1,num2)
+            {
+                return num1+num2
+            }
+
+            SegundoApellido = "Aguilera"
+        }
+
+
+        //esta es la subclase
+        class Futbolista extends Deportista{
+            constructor(nombre,apellido,goles)
+            {
+                super(nombre,apellido)
+                this._goles = goles;
+
+            }
+
+            /*esta parte de get y set en este ejemplo se pueden omitir y hacer directamenta
+            en consola hice lo siguente, get es pare consultar o ver
+            y set es para modifcar, primero creamos una instancia de 
+            futbolista:
+            let futbolista1 = new Futbolista ("Luis","Fernando",25)
+            luego consultamos con:
+            futbolista1.golesg
+            y luego modificamos con
+            futbolista1.goless = 20
+            para hacer directamente sin los metodos nada mas es cuestion de hacer 
+            las consultas directamente a _goles
+
+            Es importante notar que el uso de _ al principio del nombre de la propiedad _goles
+             es una convención en JavaScript que indica que la propiedad debe ser tratada como 
+             privada y no debe ser modificada directamente desde fuera de la clase. En su lugar, 
+             se deben usar los métodos get y set para interactuar con ella.
+            */
+            get golesg(){
+                return this._goles
+            }
+
+            set goless(nuevoGoles){
+                this._goles = nuevoGoles
+            }
+
+        }
+
+        let comida = "hamburgesa"
+
+        
+
+
+       
+
+
+
+    </script>
+
+
+
+
+
+
+    
+</body>
+</html>
