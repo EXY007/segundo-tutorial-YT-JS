@@ -1,0 +1,9 @@
+{
+
+    "nombre":"Luis Fernando",
+    "edad":39,
+    "estudiandte":false,
+    "direccion":{"calle":"avenida primera No.55","ciudad":"caracas"},
+    "telefono":["123-4567-89","987654321"]
+
+}
